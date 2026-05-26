@@ -1,0 +1,6 @@
+# Dev tooling only (lint + git hooks). Reused runtime tools (smg, vllm) are NOT
+# pinned here — see docs/setup.md; they are environment/GPU-specific.
+# Install: uv pip install --python .venv/bin/python -r requirements-dev.txt
+pre-commit==4.6.0
+shellcheck-py==0.11.0.1
+matplotlib==3.10.7

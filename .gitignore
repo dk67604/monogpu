@@ -1,0 +1,33 @@
+# Rust (added only when a Rust component exists)
+/target/
+**/*.rs.bk
+Cargo.lock        # keep for bins; ignore until we have a Rust binary
+
+# Python (added only if a Python component is ever introduced)
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Benchmark / run artifacts
+results/
+*.csv
+*.json.log
+*.log
+bench/out/
+
+# Model weights / caches — never commit
+models/
+*.safetensors
+*.gguf
+hf_cache/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# runtime files written by scripts
+scripts/.workers
+run/
